@@ -96,11 +96,13 @@ class WorkflowTask extends Task {
   }
 
   const message = messageList.join(`\n${"-".repeat(15)}\n`);
-  await notify.sendNotify("Dify定时工作流", message);
+  // コメントアウト
+  // await notify.sendNotify("Dify定时工作流", message);
 })()
   .catch((e) => {
     $.log("", `❌ ${$.name}, 失败! 原因: ${e}!`, "");
-    notify.sendNotify("Dify定时工作流-失败", e.message);
+    // コメントアウト
+    // notify.sendNotify("Dify定时工作流-失败", e.message);
   })
   .finally(() => {
     $.done();
