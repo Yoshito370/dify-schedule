@@ -35,7 +35,8 @@ class WorkflowTask extends Task {
       const info = await workflow.info(user);
       this.workfolwName = info.data?.name || '';
       console.log(`Dify工作流【${info.data.name}】开始执行...`)
-      const response =  await workflow.getWorkflowResult(inputs, user,true)
+    // 第三引数の「true」を「false」に変更
+      const response =  await workflow.getWorkflowResult(inputs, user,false)
       this.result = response.text || ''
     }
 
