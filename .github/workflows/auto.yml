@@ -9,9 +9,9 @@ env:
   DIFY_TOKENS: ${{ secrets.DIFY_TOKENS }}
   DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
   DIFY_INPUTS: ${{ secrets.DIFY_INPUTS }}
-  #  EMAIL_USER: ${{ secrets.EMAIL_USER }}
-  #  EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-  #  EMAIL_TO: ${{ secrets.EMAIL_TO }}
+  EMAIL_USER: ${{ secrets.EMAIL_USER }}
+  EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+  EMAIL_TO: ${{ secrets.EMAIL_TO }}
   #  DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
   #  PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
   #  WEIXIN_WEBHOOK: ${{ secrets.WEIXIN_WEBHOOK }}
