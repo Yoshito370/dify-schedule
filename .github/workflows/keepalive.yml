@@ -1,7 +1,7 @@
 name: Keep Scheduled Active
 on:
   schedule:
-    - cron: "0 0 * * 0"  # 毎週日曜 00:00 UTC（日本時間では午前9時）の例
+    - cron: "0 0 * * 3"  # 毎週水曜 0:00 UTC／日本時間 9:00
 permissions:
   actions: write
 jobs:
