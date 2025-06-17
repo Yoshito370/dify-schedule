@@ -3,6 +3,7 @@ name: Keep Scheduled Active
 on:
   schedule:
     - cron: "0 0 * * 3"  # 毎週水曜 0:00 UTC／9:00 JST
+  workflow_dispatch:
 
 permissions:
   actions: write
